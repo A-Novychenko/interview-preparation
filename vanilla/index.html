@@ -13,7 +13,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <title>WEBSTUDIO</title>
 
@@ -21,175 +21,196 @@
 
 <body>
 
-    <header>
+    <header class="header">
 
-        <nav class="main-nav">
-            <ul class="list">
-                <li>
+        <div class="container">
+
+            <div class="header-wrap">
+                <nav class="nav">
+
                     <a href="/" class="link logo">
                         <span class="logo-accent">Web</span>Studio
                     </a>
-                </li>
 
-                <li><a href="/" class="link main-nav-link">Studio</a></li>
+                    <ul class="list links-list">
 
-                <li><a href="/portfolio" class="link main-nav-link">Portfolio</a></li>
+                        <li><a href="/" class="link nav-link">Studio</a></li>
 
-                <li><a href="/Contacts" class="link main-nav-link">Contacts</a></li>
-            </ul>
-        </nav>
+                        <li><a href="/portfolio" class="link nav-link">Portfolio</a></li>
 
-        <ul class="list">
-            <li>
-                <a href="mailto:info@devstudio.com" target="_blank" class="link contacts-link">info@devstudio.com</a>
-            </li>
+                        <li><a href="/Contacts" class="link nav-link">Contacts</a></li>
+                    </ul>
+                </nav>
 
-            <li>
-                <a href="tel:+110001111111" target="_blank" class="link contacts-link">+11 (000) 111-11-11</a>
-            </li>
-        </ul>
+                <ul class="list contacts-list">
+                    <li>
+                        <a href="mailto:info@devstudio.com" target="_blank"
+                            class="link contacts-link">info@devstudio.com</a>
+                    </li>
+
+                    <li>
+                        <a href="tel:+110001111111" target="_blank" class="link contacts-link">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </header>
 
     <main>
 
-        <section class="hero-section">
-            <h1 class="main-title">Effective Solutions<br />
-                for Your Business</h1>
+        <section class="section hero-section">
+            <div class="container">
+                <h1 class="main-title">Effective Solutions<br />
+                    for Your Business</h1>
 
-            <button type="button" class="hero-button">Order Service</button>
+                <button type="button" class="hero-button">Order Service</button>
+            </div>
         </section>
 
-        <section class="features-section">
-            <h2>Features</h2>
-            <!-- This header should be hidden! -->
+        <section class="section features-section">
+            <div class="container">
+                <h2>Features</h2>
+                <!-- This header should be hidden! -->
 
-            <ul class="list">
-                <li>
-                    <h3 class="subtitle">Strategy</h3>
+                <ul class="list">
+                    <li>
+                        <h3 class="subtitle">Strategy</h3>
 
-                    <p>Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution.</p>
-                </li>
+                        <p>Our goal is to identify the business
+                            problem to walk away with the perfect and creative solution.</p>
+                    </li>
 
-                <li>
-                    <h3 class="subtitle">Punctuality</h3>
+                    <li>
+                        <h3 class="subtitle">Punctuality</h3>
 
-                    <p>Bring the key message to the brand's audience for the best price within the shortest possible
-                        time.</p>
-                </li>
+                        <p>Bring the key message to the brand's audience for the best price within the shortest possible
+                            time.</p>
+                    </li>
 
-                <li>
-                    <h3 class="subtitle">Diligence</h3>
+                    <li>
+                        <h3 class="subtitle">Diligence</h3>
 
-                    <p>Research and confirm brands that present the strongest digital growth opportunities and minimize
-                        risk.</p>
-                </li>
+                        <p>Research and confirm brands that present the strongest digital growth opportunities and
+                            minimize
+                            risk.</p>
+                    </li>
 
-                <li>
-                    <h3 class="subtitle">Technologies</h3>
+                    <li>
+                        <h3 class="subtitle">Technologies</h3>
 
-                    <p>Design practice focused on digital experiences. We bring forth a deep passion for
-                        problem-solving.</p>
-                </li>
-            </ul>
+                        <p>Design practice focused on digital experiences. We bring forth a deep passion for
+                            problem-solving.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section class="team-section">
-            <h2 class="title">Our Team</h2>
+        <section class="section team-section">
+            <div class="container">
+                <h2 class="title">Our Team</h2>
 
-            <ul class="list team-list">
-                <li class="team-item">
-                    <img src="./imgs/team/mark.webp" alt="Mark Guerrero" width="264" height="260">
+                <ul class="list team-list">
+                    <li class="team-item">
+                        <img src="./imgs/team/mark.webp" alt="Mark Guerrero" width="264" height="260">
 
-                    <p class="team-name">Mark Guerrero</p>
+                        <p class="team-name">Mark Guerrero</p>
 
-                    <p>Product Designer</p>
-                </li>
+                        <p>Product Designer</p>
+                    </li>
 
-                <li class="team-item">
-                    <img src="./imgs/team/tom.webp" alt="Tom Ford" width="264" height="260">
+                    <li class="team-item">
+                        <img src="./imgs/team/tom.webp" alt="Tom Ford" width="264" height="260">
 
-                    <p class="team-name">Tom Ford</p>
+                        <p class="team-name">Tom Ford</p>
 
-                    <p>Frontend Developer</p>
-                </li>
+                        <p>Frontend Developer</p>
+                    </li>
 
-                <li class="team-item">
-                    <img src="./imgs/team/camila.webp" alt="Camila Garcia" width="264" height="260">
+                    <li class="team-item">
+                        <img src="./imgs/team/camila.webp" alt="Camila Garcia" width="264" height="260">
 
-                    <p class="team-name">Camila Garcia</p>
+                        <p class="team-name">Camila Garcia</p>
 
-                    <p>Marketing</p>
-                </li>
+                        <p>Marketing</p>
+                    </li>
 
-                <li class="team-item">
-                    <img src="./imgs/team/daniel.webp" alt="Daniel Wilson" width="264" height="260">
+                    <li class="team-item">
+                        <img src="./imgs/team/daniel.webp" alt="Daniel Wilson" width="264" height="260">
 
-                    <p class="team-name">Daniel Wilson</p>
+                        <p class="team-name">Daniel Wilson</p>
 
-                    <p>UI Designer</p>
-                </li>
-            </ul>
+                        <p>UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2 class="title">Our Portfolio</h2>
+        <section class="section">
+            <div class="container">
+                <h2 class="title">Our Portfolio</h2>
 
-            <ul class="list">
-                <li>
-                    <img src="./imgs/portfolio/banking.webp" alt="Screens banking app" width="360" height="300">
-                    <h3 class="subtitle">Banking App</h3>
-                    <p>App</p>
-                </li>
+                <ul class="list">
+                    <li>
+                        <img src="./imgs/portfolio/banking.webp" alt="Screens banking app" width="360" height="300">
+                        <h3 class="subtitle">Banking App</h3>
+                        <p>App</p>
+                    </li>
 
-                <li>
-                    <img src="./imgs/portfolio/payment.webp" alt="QR code reading by smartphone" width="360"
-                        height="300">
-                    <h3 class="subtitle">Cashless Payment</h3>
-                    <p>Marketing</p>
-                </li>
+                    <li>
+                        <img src="./imgs/portfolio/payment.webp" alt="QR code reading by smartphone" width="360"
+                            height="300">
+                        <h3 class="subtitle">Cashless Payment</h3>
+                        <p>Marketing</p>
+                    </li>
 
-                <li>
-                    <img src="./imgs/portfolio/meditation.webp"
-                        alt="the multi-colored site is displayed on a smartphone and a laptop" width="360" height="300">
-                    <h3 class="subtitle">Meditation App</h3>
-                    <p>App</p>
-                </li>
+                    <li>
+                        <img src="./imgs/portfolio/meditation.webp"
+                            alt="the multi-colored site is displayed on a smartphone and a laptop" width="360"
+                            height="300">
+                        <h3 class="subtitle">Meditation App</h3>
+                        <p>App</p>
+                    </li>
 
-                <li>
-                    <img src="./imgs/portfolio/taxi.webp" alt="interior of a taxi car" width="360" height="300">
-                    <h3 class="subtitle">Taxi Service</h3>
-                    <p>Marketing</p>
-                </li>
+                    <li>
+                        <img src="./imgs/portfolio/taxi.webp" alt="interior of a taxi car" width="360" height="300">
+                        <h3 class="subtitle">Taxi Service</h3>
+                        <p>Marketing</p>
+                    </li>
 
-                <li>
-                    <img src="./imgs/portfolio/screen.webp"
-                        alt="on the left is a smartphone and on the right are screens with the image of abstraction"
-                        width="360" height="300">
-                    <h3 class="subtitle">Screen Illustrations</h3>
-                    <p>Design</p>
-                </li>
+                    <li>
+                        <img src="./imgs/portfolio/screen.webp"
+                            alt="on the left is a smartphone and on the right are screens with the image of abstraction"
+                            width="360" height="300">
+                        <h3 class="subtitle">Screen Illustrations</h3>
+                        <p>Design</p>
+                    </li>
 
-                <li>
-                    <img src="./imgs/portfolio/courses.webp" alt="girl with phone and headphones" width="360"
-                        height="300">
-                    <h3 class="subtitle">Online Courses</h3>
-                    <p>Marketing</p>
-                </li>
-            </ul>
+                    <li>
+                        <img src="./imgs/portfolio/courses.webp" alt="girl with phone and headphones" width="360"
+                            height="300">
+                        <h3 class="subtitle">Online Courses</h3>
+                        <p>Marketing</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="page-footer">
 
-        <a href="/" class="link logo logo-inversion">
-            <span class="logo-accent">Web</span>Studio
-        </a>
+        <div class="container">
 
-        <strong class="footer-label">Increase the flow of customers and sales for your business with digital marketing
-            &#38; growth
-            solutions.</strong>
+            <a href="/" class="link logo logo-inversion">
+                <span class="logo-accent">Web</span>Studio
+            </a>
 
+            <strong class="footer-label">Increase the flow of customers and sales for your business with digital
+                marketing
+                &#38; growth
+                solutions.</strong>
+
+        </div>
     </footer>
 
 </body>
