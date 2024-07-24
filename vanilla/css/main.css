@@ -1,0 +1,53 @@
+/* hero-section */
+
+.hero-section {
+  background-color: var(--dark-bg-color);
+}
+
+.main-title {
+  color: var(--light-text-color);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  text-align: center;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+
+  color: var(--light-text-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color-dark);
+}
+
+/* /hero-section */
+
+/* features-section */
+/* /features-section */
+
+/* team-section */
+
+.team-section {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+  text-align: center;
+}
+
+.team-item {
+  background-color: var(--primary-bg-color);
+}
+
+/* /team-section */
+
+/* portfolio-section */
+/* /portfolio-section */
