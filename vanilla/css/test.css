@@ -1,0 +1,43 @@
+.test-section {
+  background-color: antiquewhite;
+}
+
+.first-link {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+.my-link {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(70, 70, 255);
+  border-radius: 4px;
+
+  color: bisque;
+  text-decoration: none;
+
+  transition: var(--animation);
+}
+
+.my-link:hover,
+.my-link:focus {
+  background-color: rgb(35, 35, 251);
+
+  color: rgb(255, 193, 116);
+}
+
+.icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: beige;
+
+  vertical-align: middle;
+}
+
+.text {
+  vertical-align: middle;
+}

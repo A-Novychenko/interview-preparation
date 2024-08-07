@@ -2,28 +2,17 @@
 
 .hero-section {
   background-color: var(--dark-bg-color);
+
+  text-align: center;
 }
 
 .main-title {
+  margin-bottom: 48px;
+
   color: var(--light-text-color);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  text-align: center;
-}
-
-.hero-button {
-  background-color: var(--accent-color);
-
-  color: var(--light-text-color);
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--accent-color-dark);
 }
 
 /* /hero-section */
