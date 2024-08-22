@@ -2,42 +2,26 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-
-  /* align-content: center; */
-  /* height: 1000px; */
-  /* outline: 1px solid green; */
 }
 
 .gallery-item {
   display: flex;
   gap: 8px;
-  align-items: flex-start;
-
+  flex-basis: calc((100% - 32px) / 3);
   padding: 8px;
-  width: calc((100% - 32px) / 3);
 
   background-color: rgb(255, 251, 246);
   box-shadow: 2px 2px 3px #a7a7a7;
 }
 
 .gallery-item img {
+  width: 100px;
   flex-shrink: 0;
   background-color: rgb(136, 210, 0);
+  align-self: flex-start;
 }
 
-.grow {
-  display: flex;
-  gap: 40px;
-  background-color: lightgreen;
-}
-
-.grow-item {
-  width: 50px;
-  height: 50px;
-  background-color: darkorange;
-  flex-grow: 1;
-}
-
-.grow-item:nth-child(2) {
-  flex-grow: 5;
+.gallery-item:nth-child(2) {
+  background-color: chocolate;
+  order: -1;
 }
