@@ -148,11 +148,11 @@ main {
 
 .page-header-wrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .page-header-wrap .link {
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -160,7 +160,6 @@ main {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -169,6 +168,7 @@ main {
 .site-nav {
   display: flex;
   gap: 40px;
+  margin-left: 76px;
 }
 
 .site-nav .link.current {
@@ -182,7 +182,9 @@ main {
 
 .contacts-list {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  margin-left: auto;
+  column-gap: 40px;
 }
 
 .contacts-link:hover,
@@ -204,7 +206,6 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-
   width: 264px;
 }
 

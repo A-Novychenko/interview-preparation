@@ -9,16 +9,16 @@
   gap: 8px;
   flex-basis: calc((100% - 32px) / 3);
   padding: 8px;
-
   background-color: rgb(255, 251, 246);
+
   box-shadow: 2px 2px 3px #a7a7a7;
 }
 
 .gallery-item img {
   width: 100px;
   flex-shrink: 0;
-  background-color: rgb(136, 210, 0);
   align-self: flex-start;
+  background-color: rgb(136, 210, 0);
 }
 
 .gallery-item:nth-child(2) {
