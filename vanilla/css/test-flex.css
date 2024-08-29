@@ -26,4 +26,28 @@
   color: var(--light-text-color);
 }
 
-/////////////////////////////////////////
+/* ///////////////////////// */
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+  width: 320px;
+  height: 380px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-content: center; */
+
+  background-color: aquamarine;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+
+  font-size: 40px;
+}
+
+.one {
+}
