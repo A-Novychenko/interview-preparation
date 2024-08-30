@@ -19,6 +19,8 @@
 }
 
 .main-page-flex {
+  /* display: flex; */
+  /* align-items: center; */
   flex-grow: 1;
   padding: 20px;
   background-color: var(--accent-color);
@@ -28,26 +30,36 @@
 
 /* ///////////////////////// */
 
-.flex-container {
-  display: flex;
-  gap: 10px;
-  width: 320px;
-  height: 380px;
-  align-items: baseline;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  /* align-content: center; */
-
-  background-color: aquamarine;
+.main-bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(77, 90, 229, 0.2),
+      rgb(64, 75, 191, 0.2)
+    ),
+    url("../imgs/bg-imgs/dark-background-abstract.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-
-  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
 }
 
-.one {
+.box::before,
+.box::after {
+  content: "";
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: var(--accent-color-dark);
+  box-shadow: 5px 5px 10px 3px var(--accent-color);
+}
+
+.box:hover::before,
+.box:hover::after {
+  background-color: red;
 }
