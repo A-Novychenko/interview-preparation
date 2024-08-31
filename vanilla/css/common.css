@@ -13,6 +13,8 @@
 
   --border-light-color: #e7e9fc;
 
+  --overlay-color: rgba(46, 47, 66, 0.7);
+
   --animation: all 0.3s linear;
 }
 
