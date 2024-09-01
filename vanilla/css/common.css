@@ -261,8 +261,8 @@ main {
   background-size: 16px 16px;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-links a.social-link:hover,
+.social-links a.social-link:focus {
   background-color: var(--accent-color-socials);
 }
 
