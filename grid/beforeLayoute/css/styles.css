@@ -1,0 +1,22 @@
+@import url("./basic-styles.css");
+
+/* .container {
+  display: grid;
+  border: 10px solid #000;
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+.container {
+  display: grid;
+  border: 10px solid #000;
+  grid-template-columns: repeat(auto-fit, 200px);
+} */
+
+.container {
+  display: grid;
+  /* border: 10px solid #000;
+  gap: 20px; */
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  grid-template-columns: 1fr minmax(200px, 300px) 2fr;
+}

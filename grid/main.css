@@ -1,0 +1,72 @@
+@import url("./basic-styles.css");
+
+/* lesson styles */
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  gap: 40px;
+
+  grid-template-areas:
+    "h h h h"
+    "m m . s"
+    "f f f f";
+}
+
+.header {
+  grid-area: h;
+}
+
+.main {
+  grid-area: m;
+}
+
+.sidebar {
+  grid-area: s;
+}
+
+.footer {
+  grid-area: f;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-areas:
+      "s h h h"
+      "s m m m"
+      "s f f f";
+  }
+} */
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 150px);
+  border: 10px solid #000;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+  height: 550px;
+  align-content: center;
+}
+
+.grid-item-5 {
+  justify-self: center;
+  align-self: end;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  border: 2px solid #000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
