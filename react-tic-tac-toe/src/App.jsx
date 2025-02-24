@@ -1,5 +1,11 @@
 import { useState } from 'react';
 
+const BOARD_ITEMS = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+];
+
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -31,24 +37,27 @@ function Board({ xIsNext, squares, onPlay }) {
     onPlay(nextSquares);
   }
 
+  const rowSquares = (item, idx) => (
+    <div className="board-row" key={idx}>
+      {item &&
+        item.map(value => (
+          <Square
+            key={value}
+            value={squares[value]}
+            onSquareClick={() => handleClick(value)}
+          />
+        ))}
+    </div>
+  );
+
+  const boardMarkup = (
+    <>{BOARD_ITEMS && BOARD_ITEMS.map((el, idx) => rowSquares(el, idx))}</>
+  );
+
   return (
     <>
       <div className="status">{status}</div>
-      <div className="board-row">
-        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-        <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
-        <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
-      </div>
-      <div className="board-row">
-        <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
-        <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
-        <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
-      </div>
-      <div className="board-row">
-        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
-        <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
-        <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
-      </div>
+      {boardMarkup}
     </>
   );
 }
@@ -73,9 +82,18 @@ function calculateWinner(squares) {
   return null;
 }
 
+function ReverseBtn({ onClick }) {
+  return (
+    <button type="button" onClick={onClick}>
+      Reverse
+    </button>
+  );
+}
+
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
+  const [reversedHistory, setReversedHistory] = useState(false);
 
   const xIsNext = currentMove % 2 === 0;
   const currentSquares = history[currentMove];
@@ -90,19 +108,29 @@ export default function Game() {
     setCurrentMove(nextMove);
   }
 
-  const moves = history.map((squares, move) => {
-    let description;
-    if (move > 0) {
-      description = 'Go to move #' + move;
-    } else {
-      description = 'Go to game start';
-    }
-    return (
-      <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
-      </li>
-    );
-  });
+  function handleReverse() {
+    setReversedHistory(!reversedHistory);
+  }
+
+  const moves = history
+    .map((squares, move) => {
+      let description;
+      if (move > 0) {
+        description =
+          move === currentMove
+            ? 'You are at move #' + move
+            : 'Go to move #' + move;
+      } else {
+        description = 'Go to game start';
+      }
+
+      return (
+        <li key={move}>
+          <button onClick={() => jumpTo(move)}>{description}</button>
+        </li>
+      );
+    })
+    .sort(() => (reversedHistory ? -1 : 1));
 
   return (
     <div className="game">
@@ -110,7 +138,8 @@ export default function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
-        <ol>{moves}</ol>
+        <ReverseBtn onClick={handleReverse} />
+        <ol reversed={reversedHistory}>{moves}</ol>
       </div>
     </div>
   );
