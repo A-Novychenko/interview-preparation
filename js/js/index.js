@@ -73,3 +73,34 @@
 
 // console.log('window', window)
 
+// const a=1
+// const b = () => 2
+// let x
+
+// const c = a && b()
+
+
+// if (a) { 
+//     x=b()
+// }
+
+// console.log('c', c)
+// console.log('x', x)
+
+// const arr = []
+// arr[1]=null
+// arr[6]=5
+// console.log('arr.length', arr.length,  JSON.stringify(arr), arr)
+// // console.log('first', JSON.stringify(arr))
+
+// let a 
+
+// const foo = (a) => Number(a)
+
+// a = false
+
+// console.log('foo', foo(a))
+
+// console.log('Number.parseInt()', Number.parseFloat("x0"))
+// console.dir(Number)
+console.log('x', 0.1+0.2===0.3)
