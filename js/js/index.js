@@ -277,10 +277,13 @@ const rootRef = document.querySelector("#root")
 // console.log(1 && 0); 
 
 
-console.log(1 || 2)
-console.log(1 && 2)
-console.log(0 || 5)
-console.log(0 && 5)
+// console.log(1 || 2)
+// console.log(1 && 2)
+// console.log(0 || 5)
+// console.log(0 && 5)
+
+// console.log(1&&2&&3&&4&&5&&0);
+// console.log(0 || false || null||9)
 
 
 
@@ -293,3 +296,120 @@ console.log(0 && 5)
 // rootRef.innerHTML = arr.length  ? "<p>Title</p>" : null
 // console.log('rootRef', rootRef)
 
+
+
+// const colors = ["red", "blue", "green", "white"]
+
+// const color = colors[1]
+
+// function getColor(color) { 
+//     let currentColor 
+
+//  switch (color) { 
+//     case "red": 
+//          currentColor= "Червоний"
+//          break
+     
+//      case "blue": 
+//          currentColor= "Синій"
+//          break
+//      case "green": 
+//    currentColor= "Зелений"
+//          break
+     
+//      default :currentColor= "default"
+//  }
+    
+//     return  currentColor 
+// }
+
+// const markup = colors.reduce((acc, color) => { 
+//    return acc + `<p style="color: ${color};">${getColor(color)}<p>`
+// }, '<p style="fontWeight: 700; color: yellow">Colors UK:<p>')
+    
+
+//  rootRef.innerHTML = markup
+
+// const msgs = [{ name: "w", msg: "Ahtung!" }, { name: "e", msg: "ERROR!" }, { name: "d", msg: "GREAT!!!" }]
+
+// function makeNotify({ name, msg }) { 
+ 
+//     switch (name) { 
+//         case "w" :
+//           return `<p style="color: white; background-color: yellowgreen">${msg}</p>`
+            
+//         case "e" :
+//           return `<p style="color: white; background-color: red">${msg}</p>`
+            
+//         case "d" :
+//            return `<p style="color: white; background-color: green">${msg}</p>`
+            
+        
+//         default:  return `<p style="color: white; background-color: grey">default</p>`
+//     }
+// }
+
+// rootRef.innerHTML = msgs.map(msg=>makeNotify(msg)).join("")
+
+// let value = 0
+// const MAX_VALUE = 100;
+
+// while (value < MAX_VALUE) { 
+//     value += 1 
+//     console.log('value', value)
+// }
+
+// rootRef.innerHTML = `VALUE: ${value}`
+
+// let q = 0
+// do {
+//     console.log('q', q)
+//     q += 1
+// } while (q < 10)
+
+// let password = "";
+
+// do {
+//   password = prompt("Введіть пароль довший 4-х символів", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+// const startV = 2
+// let v = startV
+// for (let i = 0; i <= 20; i+=1 ) {
+//     console.log('iteration №: ', i);
+
+//     console.log('v', startV)
+//     console.log('pow: ', i+2);
+//     v*=2
+//     console.log('v*pow', v)
+
+//     console.log('===================' )
+// }
+
+// "Цикл for:"
+// for (let i = 0; i < 10; i += 1) { statment}
+// let i = 0; ініціалізація - створення змінної - лічильника з початковим значенням;
+// i < 10; condidion / умова - виконується перед виконанням циклу і якщо true то statment / тіло циклу виконується;
+// i += 1 post - expression - пост - вираз-- вираз який виконуєть наприкінці кожної ітерації
+
+// const max = 10;
+// for (let i = 1; i < max; i += 1) {
+//   console.log(`${max} % ${i} = `, max % i);
+// }
+
+
+// const MAX_NUMBER = 11
+
+// const arr =[]
+
+// for (let i = 0; i < MAX_NUMBER; i += 1) { 
+//     if (i % 2 === 0) continue
+//     // continue - завершує поточну ітерацію і переходить до наступної
+//     if (i === 10) break
+//     // break завершує виконання циклу і переходить до виконання коду нижче за циклом
+//     arr.push(i)
+
+// }
+
+// console.log('arr', arr)
