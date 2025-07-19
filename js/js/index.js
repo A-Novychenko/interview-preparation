@@ -1,4 +1,4 @@
-"use strict"
+// "use strict" // не использую в файле потому что при подключении скрипта указано type="module" - это уже включает строгий режим
 
 const rootRef = document.querySelector("#root")
 
@@ -413,3 +413,4 @@ const rootRef = document.querySelector("#root")
 // }
 
 // console.log('arr', arr)
+
