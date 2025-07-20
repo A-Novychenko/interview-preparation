@@ -1,6 +1,6 @@
 // "use strict" // не использую в файле потому что при подключении скрипта указано type="module" - это уже включает строгий режим
 
-const rootRef = document.querySelector("#root")
+const rootRef = document.querySelector('#root');
 
 // console.log('firstVarBefore', firstVar)
 
@@ -16,7 +16,6 @@ const rootRef = document.querySelector("#root")
 
 // var x = y,
 
-
 // y = 'A'
 
 // // console.log('x', x)
@@ -24,7 +23,6 @@ const rootRef = document.querySelector("#root")
 
 // // var x = y,y = "A";
 // // console.log(x + y); // undefinedA
-
 
 // var x = 0;
 
@@ -38,24 +36,22 @@ const rootRef = document.querySelector("#root")
 // // значение x взято из глобальной переменной, как и ожидалось
 // // значение переменной y доступно глобально
 
-
 // const a = 1
 // let b = 2
 // var c = 3
 // d = 4
 
-// function foo () { 
+// function foo () {
 //     var eee = 5
 //     rrr = 10
 //     const ccc = 5
 
-//     return function () { 
+//     return function () {
 //         console.log('eee', eee)
 //         console.log('rrr', rrr)
 //         console.log('ccc', ccc)
 //     }
 // }
-
 
 // const closure = foo()
 
@@ -65,11 +61,11 @@ const rootRef = document.querySelector("#root")
 
 // console.log('window1', window)
 
-// const foo1 = function () { 
+// const foo1 = function () {
 //     console.log('foo1' )
 // }
 
-// function foo2 () { 
+// function foo2 () {
 //     console.log('foo2' )
 // }
 
@@ -81,8 +77,7 @@ const rootRef = document.querySelector("#root")
 
 // const c = a && b()
 
-
-// if (a) { 
+// if (a) {
 //     x=b()
 // }
 
@@ -95,7 +90,7 @@ const rootRef = document.querySelector("#root")
 // console.log('arr.length', arr.length,  JSON.stringify(arr), arr)
 // // console.log('first', JSON.stringify(arr))
 
-// let a 
+// let a
 
 // const foo = (a) => Number(a)
 
@@ -191,7 +186,7 @@ const rootRef = document.querySelector("#root")
 //     console.log('ffX', ffX)
 // } else if (!Number.isNaN(ffY)) {
 //     console.log('ffy', ffY)
-// } else { 
+// } else {
 //     console.log('Not a Num')
 // }
 
@@ -214,7 +209,6 @@ const rootRef = document.querySelector("#root")
 // console.log('Math.round(w)', Math.round(w))
 // console.log('Math.round(e)', Math.round(e))
 // console.log('Math.round(r)', Math.round(r))
-
 
 // console.log('Math.random()', Math.round(Math.random()*(10-1)+1))
 
@@ -250,9 +244,9 @@ const rootRef = document.querySelector("#root")
 // const files = ["button.js", "title.js, title.css", "header.js"]
 // const filesStr = "button.js title.js title.css header.js"
 
-// const newFiles = files.map(el => { 
+// const newFiles = files.map(el => {
 //     const isJsFile = el.endsWith(".js")
-//     if (isJsFile) { 
+//     if (isJsFile) {
 //         return el.replace(".js", ".ts")
 //     }
 
@@ -265,17 +259,15 @@ const rootRef = document.querySelector("#root")
 
 // console.log('updFiles', updFiles)
 
-
 // const str = "number: 10"
 // console.log('text', str.slice(0,6))
 
 // const age = 20;
 // console.log(age > 10 && age < 30); // true && true -> true
-// console.log(0 && age < 30); 
-// console.log(1 && age < 30); 
-// console.log(1 && 30); 
-// console.log(1 && 0); 
-
+// console.log(0 && age < 30);
+// console.log(1 && age < 30);
+// console.log(1 && 30);
+// console.log(1 && 0);
 
 // console.log(1 || 2)
 // console.log(1 && 2)
@@ -285,66 +277,57 @@ const rootRef = document.querySelector("#root")
 // console.log(1&&2&&3&&4&&5&&0);
 // console.log(0 || false || null||9)
 
-
-
-
 // const arr = [];
 // console.log('markup: ', arr.length  && "<p>Title</p>")
 
-
-
 // rootRef.innerHTML = arr.length  ? "<p>Title</p>" : null
 // console.log('rootRef', rootRef)
-
-
 
 // const colors = ["red", "blue", "green", "white"]
 
 // const color = colors[1]
 
-// function getColor(color) { 
-//     let currentColor 
+// function getColor(color) {
+//     let currentColor
 
-//  switch (color) { 
-//     case "red": 
+//  switch (color) {
+//     case "red":
 //          currentColor= "Червоний"
 //          break
-     
-//      case "blue": 
+
+//      case "blue":
 //          currentColor= "Синій"
 //          break
-//      case "green": 
+//      case "green":
 //    currentColor= "Зелений"
 //          break
-     
+
 //      default :currentColor= "default"
 //  }
-    
-//     return  currentColor 
+
+//     return  currentColor
 // }
 
-// const markup = colors.reduce((acc, color) => { 
+// const markup = colors.reduce((acc, color) => {
 //    return acc + `<p style="color: ${color};">${getColor(color)}<p>`
 // }, '<p style="fontWeight: 700; color: yellow">Colors UK:<p>')
-    
 
 //  rootRef.innerHTML = markup
 
 // const msgs = [{ name: "w", msg: "Ahtung!" }, { name: "e", msg: "ERROR!" }, { name: "d", msg: "GREAT!!!" }]
 
-// function makeNotify({ name, msg }) { 
- 
-//     switch (name) { 
+// function makeNotify({ name, msg }) {
+
+//     switch (name) {
 //         case "w" :
 //           return `<p style="color: white; background-color: yellowgreen">${msg}</p>`
-            
+
 //         case "e" :
 //           return `<p style="color: white; background-color: red">${msg}</p>`
-            
+
 //         case "d" :
 //            return `<p style="color: white; background-color: green">${msg}</p>`
-            
-        
+
 //         default:  return `<p style="color: white; background-color: grey">default</p>`
 //     }
 // }
@@ -354,8 +337,8 @@ const rootRef = document.querySelector("#root")
 // let value = 0
 // const MAX_VALUE = 100;
 
-// while (value < MAX_VALUE) { 
-//     value += 1 
+// while (value < MAX_VALUE) {
+//     value += 1
 //     console.log('value', value)
 // }
 
@@ -398,12 +381,11 @@ const rootRef = document.querySelector("#root")
 //   console.log(`${max} % ${i} = `, max % i);
 // }
 
-
 // const MAX_NUMBER = 11
 
 // const arr =[]
 
-// for (let i = 0; i < MAX_NUMBER; i += 1) { 
+// for (let i = 0; i < MAX_NUMBER; i += 1) {
 //     if (i % 2 === 0) continue
 //     // continue - завершує поточну ітерацію і переходить до наступної
 //     if (i === 10) break
@@ -414,3 +396,15 @@ const rootRef = document.querySelector("#root")
 
 // console.log('arr', arr)
 
+// let c = 0;
+// let p = 0;
+
+// while (c < 5) {
+//   c += 1;
+//   console.log('c', c);
+// }
+
+// do {
+//   p += 1;
+//   console.log('p', p);
+// } while (p < 5);
