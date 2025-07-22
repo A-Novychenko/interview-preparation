@@ -408,3 +408,78 @@ const rootRef = document.querySelector('#root');
 //   p += 1;
 //   console.log('p', p);
 // } while (p < 5);
+
+// console.log('first', Math.round(27.49));
+
+// console.log('0' == false);//true
+
+// console.log('mango' > 'mango');
+
+// const val = 6;
+
+// switch (true) {
+//   case 1 > val:
+//     console.log('1');
+//     break;
+//   case 2 > val:
+//     console.log('2');
+//     break;
+//   case 3 > val:
+//     console.log('3');
+//     break;
+//   case 4 > val:
+//     console.log('4');
+//     break;
+//   case val > 5:
+//     console.log('5');
+//     break;
+//   case 6:
+//     console.log('6');
+//     break;
+
+//   default:
+//     console.log('7');
+// }
+// такой пример не желательно использовать поскольку нарушается "скорость" и принцип.
+// но я проверил(дебаг) и при таких условиях всеравно сразу выполняется подходящий кейс
+
+// if (val === 1) {
+//   console.log('1', 1);
+// } else if (val === 2) {
+//   console.log('2', 2);
+// } else if (val === 3) {
+//   console.log('3', 3);
+// } else if (val === 4) {
+//   console.log('4', 4);
+// } else if (val === 5) {
+//   console.log('5', 5);
+// } else if (val === 6) {
+//   console.log('6', 6);
+// } else {
+//   console.log('7', 7);
+// }
+
+let s = '';
+const v = 4;
+
+switch (v) {
+  case 0:
+    s += 'first ';
+  // break;
+  case 1:
+    s += 'second ';
+  // break;
+  case 2:
+    s += 'third ';
+  // break;
+  case 3:
+    s += 'fourth ';
+  // break;
+  case 4:
+    s += 'fifth ';
+  // break;
+
+  default:
+}
+
+console.log('s:', s);
