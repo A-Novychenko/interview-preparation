@@ -459,27 +459,90 @@ const rootRef = document.querySelector('#root');
 //   console.log('7', 7);
 // }
 
-let s = '';
-const v = 4;
+// let s = '';
+// const v = 4;
 
-switch (v) {
-  case 0:
-    s += 'first ';
-  // break;
-  case 1:
-    s += 'second ';
-  // break;
-  case 2:
-    s += 'third ';
-  // break;
-  case 3:
-    s += 'fourth ';
-  // break;
-  case 4:
-    s += 'fifth ';
-  // break;
+// switch (v) {
+//   case 0:
+//     s += 'first ';
+//   // break;
+//   case 1:
+//     s += 'second ';
+//   // break;
+//   case 2:
+//     s += 'third ';
+//   // break;
+//   case 3:
+//     s += 'fourth ';
+//   // break;
+//   case 4:
+//     s += 'fifth ';
+//   // break;
 
-  default:
-}
+//   default:
+// }
 
-console.log('s:', s);
+// console.log('s:', s);
+
+// for (let i = 0; i < 5; i += 1) {
+//   console.log('i', i);
+// }
+
+// var isSquare = function (n) {
+//   const v = Math.abs(n);
+//   const s = Math.sqrt(v);
+
+//   return !(s - Math.floor(s)) ? true : false;
+// };
+
+// console.log(9.3 % 1);
+
+// function doubleChar(str) {
+//   let newStr = '';
+
+//   for (let i = 0; i < str.length; i += 1) {
+//     const currentSymbol = str[i];
+
+//     if (newStr.includes(currentSymbol)) continue;
+
+//     newStr += currentSymbol;
+//   }
+
+//   return newStr;
+// }
+
+// console.log('str:', doubleChar('aabbddcc'));
+
+// let a = 5;
+// let b = 10;
+// let c = 15;
+// let d = 20;
+
+// // Change code below this line
+// a += 2;
+// b -= 4;
+// c *= 3;
+// d /= 10;
+
+// console.log('a', a);
+// console.log('b', b);
+// console.log('c', c);
+// console.log('d', d);
+
+// const str = 'string';
+
+// console.log(str.length);
+// console.log(str.slice(0, 3));
+
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if (message.length <= maxLength) return message;
+
+//   return `${message.slice(0, maxLength)}...`;
+
+//   /// Change code above this line
+//   //return result;
+// }
+
+// console.log(formatMessage('Curabitur ligula sapien', 10));
