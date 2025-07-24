@@ -546,3 +546,58 @@ const rootRef = document.querySelector('#root');
 // }
 
 // console.log(formatMessage('Curabitur ligula sapien', 10));
+
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+
+// for (let i = 0; i < arr.length; i += 1) {
+//   console.log('arr[i]', arr[i]);
+// }
+// const searchName = 'kia';
+
+// const carBrands = ['e-audi', 'e-bmw', 'e-mercedes', 's-kia', 'u-dodge'];
+// const formattedCarBrands = [];
+
+// for (const brand of carBrands) {
+//   formattedCarBrands.push(brand.slice(2, brand.length));
+// }
+
+// console.log('carBrands', carBrands);
+// console.log('formattedCarBrands', formattedCarBrands);
+
+// let foundBrand = '';
+// let log = {};
+
+// for (const brand of formattedCarBrands) {
+//   if (brand !== searchName) {
+//     log[brand] = new Date();
+//     continue;
+//   }
+
+//   foundBrand = brand;
+
+//   break;
+// }
+
+// console.table(log);
+// console.log('foundBrand', foundBrand);
+
+// let a = true;
+// a = false;
+// const b = a;
+// a = null;
+
+// console.log('b', b);
+
+// const arr = [1];
+// arr[0] = 2;
+// const newArr = arr;
+// arr[0] = 3;
+
+// console.log('newArr', newArr);
+
+// const thing = 'test';
+
+// const a = new String(thing);
+// const b = String(thing);
+// console.log('a', a, typeof a);
+// console.log('b', b, typeof b);
