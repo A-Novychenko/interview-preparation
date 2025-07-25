@@ -601,3 +601,40 @@ const rootRef = document.querySelector('#root');
 // const b = String(thing);
 // console.log('a', a, typeof a);
 // console.log('b', b, typeof b);
+
+// const str = 'This is a string. It needs to be converted to an array.';
+
+// const arr = str.split(' ');
+
+// console.log('arr', arr);
+
+// const newStr = arr.join(' ');
+
+// console.log('newStr', newStr);
+
+// console.log('arr.indexOf("be")', arr.indexOf('be'));
+// console.log('arr.includes(be)', arr.includes('be'));
+
+// const arr = [];
+// const arrLength = arr.push('a', 'b', 'c');
+// const newArrLength = arr.push('d');
+
+// console.log('arr', arr);
+// console.log('arrLength', arrLength);
+// console.log('newArrLength', newArrLength);
+
+// for (let i = arr.length; i > -1; i -= 1) {
+//   console.log('--------');
+//   console.log('arr.pop()', arr.pop());
+//   console.log('arr.length', arr.length);
+//   console.log('--------');
+// }
+
+// console.log('Arr is empty');
+
+// const arr = [1, 233, 14, 2, 5, 4, 356, 54, 7, 6475, 875, 8];
+
+// const arr2 = arr.slice(1, arr.length - 1);
+
+// console.log('arr', arr);
+// console.log('arr2', arr2);
